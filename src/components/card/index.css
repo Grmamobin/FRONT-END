@@ -1,0 +1,40 @@
+.card-info {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.card-info img {
+  width: 100px;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  align-self: center;
+}
+.card-text {
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+.card-text h2 {
+  font-size: 25px;
+  color: #9b9db1;
+}
+.card-text h3 {
+  color: black;
+}
+.card-text h3:hover {
+  cursor: pointer;
+  color: #eb5c52;
+}
+.card-text p {
+  font-size: 14px;
+  color: #9b9db1;
+  width: 200px;
+  max-width: 600px;
+}
+@media screen and (min-width: 600px) {
+  .card-info {
+    display: flex;
+    height: 100%;
+    margin: 0;
+  }
+}

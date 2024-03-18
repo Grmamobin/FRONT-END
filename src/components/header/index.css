@@ -1,0 +1,34 @@
+.header-part {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+}
+.header-part nav {
+  display: flex;
+  display: none;
+  flex-direction: row;
+}
+
+.header-part button {
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .header-part {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1700px;
+    max-width: 100%;
+    padding-right: 45px;
+  }
+  .header-part nav {
+    display: block;
+  }
+  .header-part button {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    gap: 40px;
+  }
+}

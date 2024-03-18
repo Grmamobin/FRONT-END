@@ -1,0 +1,44 @@
+.whole-page {
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  display: flex;
+  justify-content: end;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.whole-page aside {
+  width: 200px;
+  padding: 20px 20px 0px 0px;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  /* gap: 90px; */
+  /* padding: auto; */
+  /* display: flex;
+    flex-direction: column; */
+}
+
+.close-btn {
+  display: flex;
+  justify-content: end;
+  margin: 0px 0px 100px 0px;
+}
+.whole-page li {
+  margin: 0px 0px 30px 0px;
+}
+.whole-page li a {
+  color: #000;
+}
+@media screen and (min-width: 600px) {
+  .whole-page {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .whole-page aside {
+    display: none;
+  }
+}

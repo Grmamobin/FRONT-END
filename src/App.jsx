@@ -1,33 +1,59 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Header from './components/header'
+import Sidebar from './components/sidebar'
+import Card from './components/card'
+import { useState } from 'react'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [isOpen , setIsopen] = useState(false)
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <Header setIsopen = {setIsopen}/>
+    <Sidebar isOpen = {isOpen} setIsopen = {setIsopen}/>
+
+
+    <div className="middle">
+      <div className="middle-left">
+
+        <img src="assets/images/image-web-3-mobile.jpg" alt="img-mobile" />
+
+        <img src="assets/images/image-web-3-desktop.jpg" alt="img-desktop" />
+
+      <div className="left-part">
+            <p> The Bright Future of Web 3.0?</p>
+        <div className="text-and-btn">
+            <p>  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                But is it really fulfilling its promise?
+            </p>
+            <button>Read more</button>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      <div className="middle-right">
+      <div className="right-text">
+            <h2>New</h2> 
+            <h4>Hydrogen VS Electric Cars</h4>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            <hr/>
+            <h4>The Downsides of AI Artistry</h4>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+            <hr/>
+            <h4>Is VC Funding Drying Up?</h4>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </div>
+      </div>
+    </div>
+
+    <footer className='footer-part'>
+      <Card img_Card="assets/images/image-retro-pcs.jpg" h2_Card='01' h3_Card='Reviving Retro PCs' p_Card='What happens when old PCs are given modern upgrades?'/>
+
+      <Card img_Card="assets/images/image-top-laptops.jpg" h2_Card='02' h3_Card='Top 10 Laptops of 2022' p_Card='Our best picks for various needs and budgets.'/>
+
+      <Card img_Card="assets/images/image-gaming-growth.jpg" h2_Card='03' h3_Card='The Growth of Gaming' p_Card='How the pandemic has sparked fresh opportunities.'/>
+    </footer>
+
     </>
   )
 }
