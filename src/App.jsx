@@ -4,6 +4,12 @@ import Sidebar from './components/sidebar'
 import Card from './components/card'
 import { useState } from 'react'
 
+import mobile from '.././assets/images/image-web-3-mobile.jpg'
+import desktop from '.././assets/images/image-web-3-desktop.jpg'
+import retro from '.././assets/images/image-retro-pcs.jpg'
+import laptops from '.././assets/images/image-top-laptops.jpg'
+import gaming from '.././assets/images/image-gaming-growth.jpg'
+
 function App() {
   const [isOpen , setIsopen] = useState(false)
   return (
@@ -15,9 +21,9 @@ function App() {
     <div className="middle">
       <div className="middle-left">
 
-        <img src="assets/images/image-web-3-mobile.jpg" alt="img-mobile" />
+        <img src={mobile} alt="img-mobile" />
 
-        <img src="assets/images/image-web-3-desktop.jpg" alt="img-desktop" />
+        <img src={desktop} alt="img-desktop" />
 
       <div className="left-part">
             <p> The Bright Future of Web 3.0?</p>
@@ -47,11 +53,11 @@ function App() {
     </div>
 
     <footer className='footer-part'>
-      <Card img_Card="assets/images/image-retro-pcs.jpg" h2_Card='01' h3_Card='Reviving Retro PCs' p_Card='What happens when old PCs are given modern upgrades?'/>
+      <Card img_Card={retro} h2_Card='01' h3_Card='Reviving Retro PCs' p_Card='What happens when old PCs are given modern upgrades?'/>
 
-      <Card img_Card="assets/images/image-top-laptops.jpg" h2_Card='02' h3_Card='Top 10 Laptops of 2022' p_Card='Our best picks for various needs and budgets.'/>
+      <Card img_Card={laptops} h2_Card='02' h3_Card='Top 10 Laptops of 2022' p_Card='Our best picks for various needs and budgets.'/>
 
-      <Card img_Card="assets/images/image-gaming-growth.jpg" h2_Card='03' h3_Card='The Growth of Gaming' p_Card='How the pandemic has sparked fresh opportunities.'/>
+      <Card img_Card={gaming} h2_Card='03' h3_Card='The Growth of Gaming' p_Card='How the pandemic has sparked fresh opportunities.'/>
     </footer>
 
     </>

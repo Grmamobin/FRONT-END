@@ -1,6 +1,5 @@
 import './index.css'
 import PropTypes from 'prop-types'; 
-
 export default function Card({h2_Card,h3_Card,p_Card,img_Card}){
     return(
     <>

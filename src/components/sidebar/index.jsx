@@ -1,5 +1,6 @@
 import './index.css'
 import PropTypes from 'prop-types';
+import close from '../../../assets/images/icon-menu-close.svg'
 export default function Sidebar({isOpen , setIsopen}){
     return(
         <>
@@ -7,7 +8,7 @@ export default function Sidebar({isOpen , setIsopen}){
             <aside>
                 <div className='close-btn'>
                 <button onClick={() =>setIsopen(false)}>
-                    <img src="assets/images/icon-menu-close.svg" alt="close" />
+                    <img src={close} alt="close" />
                 </button>
                 </div>
                 <nav>

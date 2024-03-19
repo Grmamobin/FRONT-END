@@ -1,10 +1,12 @@
 import './index.css'
 import PropTypes from 'prop-types';
+import logo from '../../../assets/images/logo.svg'
+import menu from '../../../assets/images/icon-menu.svg'
 export default function Header({setIsopen}){
     return (
         <>
         <header className='header-part'>
-        <img src='assets/images/logo.svg' alt='logo'/>
+        <img src={logo} alt='logo'/>
         <nav>
             <ul>
                 <li>
@@ -25,7 +27,7 @@ export default function Header({setIsopen}){
             </ul>
         </nav>
         <button onClick={() =>setIsopen(true)}>
-            <img src="assets/images/icon-menu.svg" alt="open" />
+            <img src={menu} alt="open" />
         </button>
         </header>
         </>
