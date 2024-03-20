@@ -66,18 +66,18 @@
   margin-bottom: 30px;
 }
 .right-text {
-  width: 90%;
+  width: 85%;
   max-width: 100%;
   max-height: 100%;
   background-color: #010019;
   padding-top: 15px;
   padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   flex-direction: column;
   line-height: 20px;
 }
 .right-text h2 {
-  cursor: pointer;
   color: #f1a945;
   font-size: 300%;
 }
@@ -87,11 +87,11 @@
   margin-bottom: 13px;
   color: #fff;
   line-height: 30px;
+  margin-bottom: 10px;
 }
 .right-text h4:hover {
   cursor: pointer;
   color: #f1a945;
-  margin-bottom: 10px;
 }
 .right-text p {
   font-size: 15px;
@@ -117,12 +117,13 @@ hr {
   .left-part {
     display: flex;
     flex-direction: row;
-    column-gap: 150px;
+    column-gap: 140px;
     max-width: 100%;
     max-height: 50%;
   }
   .left-part p {
     width: 60%;
+    max-width: 100%;
     margin-top: 9px;
     font-size: 50px;
   }
@@ -142,10 +143,12 @@ hr {
     margin-right: 20px;
   }
   .right-text {
-    width: 200%;
+    width: 100%;
+    max-width: 100%;
     max-height: 80%;
     line-height: 20px;
     margin: 30px 0px 0px 0px;
+    padding-right: 0px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -176,12 +179,26 @@ hr {
     height: 100%;
   }
   .left-part p {
-    width: 350px;
+    max-width: 100%;
+    margin-top: 9px;
   }
   .text-and-btn {
     display: flex;
     flex-direction: column;
     margin-left: 0px;
+  }
+  .right-text {
+    width: 85%;
+    max-width: 100%;
+    max-height: 90%;
+    line-height: 20px;
+    margin: 30px 0px 0px 0px;
+    padding-right: 10px;
+  }
+  .middle-right {
+    display: flex;
+    color: #fff;
+    margin-bottom: 30px;
   }
 }
 /* @media screen and (max-width: 734px) {
